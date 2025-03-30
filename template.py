@@ -10,18 +10,18 @@ list_of_files=[
     ".github/workflows/gitkeep",
     f"Source/{project_name}/__init__.py",
     f"Source/{project_name}/components/__init__.py",
-    f"Source/{project_name}/components/data_ingestion"
-    f"Source/{project_name}/components/data_transformation",
-    f"Source/{project_name}/components/model_trainer",
-    f"Source/{project_name}/components/model_monitoring",
+    f"Source/{project_name}/components/data_ingestion.py",
+    f"Source/{project_name}/components/data_transformation.py",
+    f"Source/{project_name}/components/model_trainer.py",
+    f"Source/{project_name}/components/model_monitoring.py",
     f"Source/{project_name}/pipelines/__init__.py",
     f"Source/{project_name}/pipelines/training_pipeline.py",
     f"Source/{project_name}/exception.py",
     f"Source/{project_name}/logger.py",
     f"Source/{project_name}/utils.py",
     "app.py",
-    "setup.py"
-    "Dockerfile"
+    "setup.py",
+    "Dockerfile",
     "requirement.txt"
 ]
 
