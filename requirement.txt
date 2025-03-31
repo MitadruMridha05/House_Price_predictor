@@ -13,3 +13,4 @@ mlxtend
 catboost
 ipykernel
 scipy
+statsmodels
