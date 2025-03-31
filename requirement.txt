@@ -11,4 +11,5 @@ seaborn
 numpy
 mlxtend
 catboost
+ipykernel
 scipy
