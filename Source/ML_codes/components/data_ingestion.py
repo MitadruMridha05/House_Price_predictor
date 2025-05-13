@@ -21,7 +21,7 @@ class DataIngestion:
         try:
             # Reading data from MySQL using utility function
             logging.info("Reading data from MySQL database...")
-            df = read_sql_data()
+            df = pd.read_csv(os.path.join('notebook/datasets',"raw.csv"))
             logging.info("Successfully read data from MySQL.")
 
             # Creating directories for saving artifacts if they don't exist
