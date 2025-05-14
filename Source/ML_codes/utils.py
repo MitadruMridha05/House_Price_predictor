@@ -52,7 +52,7 @@ def save_object(file_path, obj):
     except Exception as ex:
         raise CustomException(ex, sys)
 
-def evaluate_models(x_train, y_train, x_test, y_test, models,param):
+def evaluate_models(x_train, y_train, x_test, y_test, models, param):
     try:
         report={}
 
