@@ -107,6 +107,16 @@ class ModelTrainer:
             ]
             best_model = models[best_model_name]
 
+            print("This is the Best Model: ",best_model_name)
+            models_names=list(param.keys())
+            actual_model=""
+
+            for model in models_names:
+                if best_model_name==model:
+                    actual_model=actual_model+model
+
+            best_params = param[actual_model]
+
             if best_model_score<0.6:
                 raise CustomException("No best model found")
             logging.info(f"Best found model on both training and testing dataset")
@@ -119,6 +129,7 @@ class ModelTrainer:
             predicted = best_model.predict(x_test)
 
             r2_square = r2_score(y_test, predicted)
+            
             return r2_square
         
         except Exception as e:
