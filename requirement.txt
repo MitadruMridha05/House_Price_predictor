@@ -17,3 +17,4 @@ statsmodels
 xgboost
 dill
 mlflow
+dagshub
