@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 templates
-mlflow.py
+mlf.py
 # C extensions
 *.so
 

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mitad/OneDrive/Documents/data_science_codes/House_Price_predictor/mlruns/0/42e1d7a8a4094a66b640d993696f985d/artifacts
+end_time: 1747280780355
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 42e1d7a8a4094a66b640d993696f985d
+run_name: orderly-tern-673
+run_uuid: 42e1d7a8a4094a66b640d993696f985d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747280772423
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mitad/OneDrive/Documents/data_science_codes/House_Price_predictor/mlruns/0/7c6d06c180ba4423b27019af42806946/artifacts
+end_time: 1747281414559
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c6d06c180ba4423b27019af42806946
+run_name: glamorous-kite-476
+run_uuid: 7c6d06c180ba4423b27019af42806946
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747281407558
+status: 3
+tags: []
+user_id: root

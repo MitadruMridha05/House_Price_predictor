@@ -18,6 +18,7 @@ from xgboost import XGBRegressor
 import mlflow
 import mlflow.sklearn
 import numpy as np
+import dagshub
 
 from Source.ML_codes.exception import CustomException
 from Source.ML_codes.logger import logging
@@ -132,6 +133,11 @@ class ModelTrainer:
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
              # mlflow
+            dagshub.init(repo_owner='MitadruMridha05', repo_name='House_Price_predictor', mlflow=True)
+
+            with mlflow.start_run():
+                mlflow.log_param('parameter name', 'value')
+                mlflow.log_metric('metric name', 1)
 
             with mlflow.start_run():
 
