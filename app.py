@@ -2,9 +2,9 @@
 from Source.ML_codes.logger import logging
 from Source.ML_codes.exception import CustomException
 import sys
-from Source.ML_codes.components.data_ingestion import DataIngestion,DataIngestionConfig
-from Source.ML_codes.components.data_transformation import DataTransformation,DataTransformationConfig
-from Source.ML_codes.components.model_trainer import ModelTrainer, ModelTrainerConfig
+from Source.ML_codes.components.data_ingestion import DataIngestion
+from Source.ML_codes.components.data_transformation import DataTransformation
+from Source.ML_codes.components.model_trainer import ModelTrainer
 #creates a flask application
 #app=Flask(__name__)
 
