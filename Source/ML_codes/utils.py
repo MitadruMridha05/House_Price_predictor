@@ -8,8 +8,7 @@ from dotenv import load_dotenv
 import pymysql
 import numpy as np
 import pickle
-import pandas as pd
-import dill
+
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
@@ -61,9 +60,11 @@ def evaluate_models(x_train, y_train, x_test, y_test, models, param):
             para=param[list(models.keys())[i]]
 
             gs = GridSearchCV(model,para,cv=3)
+            
             gs.fit(x_train, y_train)
 
             model.set_params(**gs.best_params_)
+
             model.fit(x_train,y_train)
 
             y_train_pred=model.predict(x_train)
@@ -77,6 +78,6 @@ def evaluate_models(x_train, y_train, x_test, y_test, models, param):
             report[list(models.keys())[i]]=test_model_score
 
         return report
-    
+
     except Exception as ex:
         raise CustomException(ex, sys)

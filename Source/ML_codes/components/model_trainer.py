@@ -128,7 +128,7 @@ class ModelTrainer:
                     actual_model=actual_model+model
 
             best_params = param[actual_model]
-
+                
             mlflow.set_registry_uri("https://dagshub.com/MitadruMridha05/House_Price_predictor.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
