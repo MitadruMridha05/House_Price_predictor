@@ -584,4 +584,4 @@ It was built to move beyond theoretical ML concepts and gain hands-on experience
 
 **Data → ML → Engineering → MLOps**
 
-If you find the project useful or interesting, consider giving this repository a ⭐.
+If you find the project useful or interesting, consider giving the repository a ⭐.
