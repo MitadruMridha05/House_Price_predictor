@@ -1,4 +1,4 @@
-#from flask import Flask,render_template,request
+from flask import Flask,render_template,request
 from Source.ML_codes.logger import logging
 from Source.ML_codes.exception import CustomException
 import sys
@@ -6,9 +6,9 @@ from Source.ML_codes.components.data_ingestion import DataIngestion
 from Source.ML_codes.components.data_transformation import DataTransformation
 from Source.ML_codes.components.model_trainer import ModelTrainer
 #creates a flask application
-#app=Flask(__name__)
+app=Flask(__name__)
 
-'''@app.route("/",methods=["GET","POST"])
+@app.route("/",methods=["GET","POST"])
 def form():
     if (request.method=="GET"):
         return render_template("form.html")
@@ -20,7 +20,7 @@ def form():
         lotSize=request.form["lotSize"]
         garageSize=request.form["garageSize"]
         neighborhoodQuality=request.form["neighborhoodQuality"]
-'''
+
 
 
 if __name__=="__main__":
